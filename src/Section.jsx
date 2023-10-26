@@ -11,11 +11,14 @@ function changeCardBackgroundImage(cardIndex) {
   const redBox = document.querySelector(".red-box");
 
   if (cardIndex === 1) {
-    redBox.style.backgroundImage = "url(src/assets/image-1.png)";
+    redBox.style.backgroundImage =
+      "url(https://github.com/uxderrick/card-progress-bar/blob/main/src/assets/image-1.png?raw=true)";
   } else if (cardIndex === 2) {
-    redBox.style.backgroundImage = "url('src/assets/image-2.png')";
+    redBox.style.backgroundImage =
+      "url('https://github.com/uxderrick/card-progress-bar/blob/main/src/assets/image-2.png?raw=true')";
   } else if (cardIndex === 3) {
-    redBox.style.backgroundImage = "url('src/assets/image-3.png')";
+    redBox.style.backgroundImage =
+      "url('https://github.com/uxderrick/card-progress-bar/blob/main/src/assets/image-3.png?raw=true')";
   }
 }
 
