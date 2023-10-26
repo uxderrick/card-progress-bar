@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.red-box {
+  /* background-color: red; */
+  height: 310px;
+  width: 300px;
+  background-image: url("src/assets/image-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  height: 90px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  /* margin: 30px 0px; */
+}
+
+.card-name {
+  padding-left: 16px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #0073e6;
+  transition: width 0.1s linear;
+}
