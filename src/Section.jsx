@@ -22,11 +22,11 @@ function changeCardBackgroundImage(cardIndex) {
   }
 }
 
-
-
-
 function updateProgressBar(progressElements, setProgressElements) {
   if (!allComplete) {
+    //change progress bar color when complete
+    const progressBar = document.querySelectorAll(".progress-bar");
+    progressBar[currentProgress].style.backgroundColor = "#0073e6";
     // If all progress bars have not completed, update them
     const updatedProgressElements = [...progressElements];
 
@@ -35,6 +35,11 @@ function updateProgressBar(progressElements, setProgressElements) {
 
     // If the progress bar is complete, move to the next one
     if (updatedProgressElements[currentProgress] >= 100) {
+      //change progress bar color when complete
+      const progressBar = document.querySelectorAll(".progress-bar");
+      progressBar[currentProgress].style.backgroundColor = "transparent";
+
+      // Set the current progress to 100
       updatedProgressElements[currentProgress] = 100;
       currentProgress = (currentProgress + 1) % totalProgressBars;
       if (currentProgress === 0) {
